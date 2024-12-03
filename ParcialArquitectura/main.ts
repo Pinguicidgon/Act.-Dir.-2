@@ -1,4 +1,3 @@
-const MONGO_URL="mongodb+srv://otheruser:123456aaabbb@nebrija-cluster.ad1qt.mongodb.net/?retryWrites=true&w=majority&appName=Nebrija-Cluster";
 // main.ts
 import { ApolloServer } from "@apollo/server";
 import { schema } from "./schema.ts";
@@ -7,7 +6,7 @@ import { FlightModel } from "./types.ts";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { resolvers } from "./resolvers.ts";
 
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = Deno.env.get("mongodb+srv://otheruser:123456aaabbb@nebrija-cluster.ad1qt.mongodb.net/?retryWrites=true&w=majority&appName=Nebrija-Cluster");
 
 if (!MONGO_URL) {
   throw new Error("Please provide a MONGO_URL");
