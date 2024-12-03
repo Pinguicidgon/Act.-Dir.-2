@@ -1,3 +1,4 @@
+MONGO_URL="mongodb+srv://otheruser:123456aaabbb@nebrija-cluster.ad1qt.mongodb.net/?retryWrites=true&w=majority&appName=Nebrija-Cluster";
 // main.ts
 import { ApolloServer } from "@apollo/server";
 import { schema } from "./schema.ts";
